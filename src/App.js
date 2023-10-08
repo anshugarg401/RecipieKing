@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import CarouselRatio from "../src/components/Breadcrums/Breadcrum"
+import Sidebar from './components/Sidebar/Sidebar';
+import Postsection from "./util/Postsection"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<>
+
+<section>
+  <div class=" pl-8 py-16">
+    <div
+      class="grid grid-cols-7 gap-x-4 overflow-y-auto"
+    >
+<div className = "col-span-5 ">
+<CarouselRatio />
+<Postsection/>
+
+</div>
+
+      
+
+<div className = "col-span-2 ">
+<Sidebar/>
+</div>
+
+      
+        
+    
     </div>
+  </div>
+  
+</section>
+
+</>
   );
 }
 
