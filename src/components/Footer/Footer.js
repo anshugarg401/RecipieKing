@@ -49,7 +49,7 @@ const Footer = () => {
         <div className="mt-6 flex justify-center gap-4 lg:justify-start">
           <a
             className="text-gray-700 transition hover:text-gray-700/75"
-            href=""
+            href="#"
             target="_blank"
             rel="noreferrer"
           >
@@ -71,7 +71,7 @@ const Footer = () => {
 
           <a
             className="text-gray-700 transition hover:text-gray-700/75"
-            href=""
+            href="#"
             target="_blank"
             rel="noreferrer"
           >
@@ -93,7 +93,7 @@ const Footer = () => {
 
           <a
             className="text-gray-700 transition hover:text-gray-700/75"
-            href=""
+            href="#"
             target="_blank"
             rel="noreferrer"
           >
@@ -113,7 +113,7 @@ const Footer = () => {
 
           <a
             className="text-gray-700 transition hover:text-gray-700/75"
-            href=""
+            href="#"
             target="_blank"
             rel="noreferrer"
           >
@@ -135,7 +135,7 @@ const Footer = () => {
 
           <a
             className="text-gray-700 transition hover:text-gray-700/75"
-            href=""
+            href="#"
             target="_blank"
             rel="noreferrer"
           >
@@ -287,13 +287,13 @@ const Footer = () => {
 
         Created with
         <a
-          href=""
+          href="#"
           className="text-gray-700 underline transition hover:text-gray-700/75"
           >Laravel</a
         >
         and
         <a
-          href=""
+          href="#"
           className="text-gray-700 underline transition hover:text-gray-700/75"
           >Laravel Livewire</a
         >.

@@ -1,7 +1,7 @@
 import React from "react";
 
 import SideCard from "./SideCard";
-import { Paper, Button } from "@mui/material";
+
 var items = [
   {
     name: "Random Name #1",

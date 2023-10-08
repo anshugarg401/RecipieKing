@@ -4,7 +4,7 @@ import Carousel from 'react-material-ui-carousel'
 import Box from '@mui/joy/Box';
 import Typography from '@mui/joy/Typography';
 import Card from '@mui/joy/Card';
-import { Paper, Button } from '@mui/material'
+import { Paper } from '@mui/material'
 const data = [
   {
     src: 'https://images.unsplash.com/photo-1502657877623-f66bf489d236',
