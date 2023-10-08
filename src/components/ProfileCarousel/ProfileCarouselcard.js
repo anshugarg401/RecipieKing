@@ -1,5 +1,5 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
+
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -30,8 +30,8 @@ const data = [
   },
 ];
 
-function Media(props) {
-  const { loading = false } = props;
+function Media() {
+  
 
   return (
     <Grid container wrap="nowrap">
@@ -72,9 +72,7 @@ function Media(props) {
   );
 }
 
-Media.propTypes = {
-  loading: PropTypes.bool,
-};
+
 
 export default function YouTube() {
   return (

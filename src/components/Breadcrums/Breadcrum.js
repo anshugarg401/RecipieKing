@@ -63,7 +63,7 @@ function Item(props)
 {
     return (
         <Paper>
-         <a href="#" className="group relative block">
+         <a href="/" className="group relative block">
   <div className="relative h-[350px] sm:h-[450px]">
     <img
       src="https://images.unsplash.com/photo-1593795899768-947c4929449d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80"
