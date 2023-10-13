@@ -4,48 +4,56 @@ import Carousel from 'react-material-ui-carousel'
 import Box from '@mui/joy/Box';
 import Typography from '@mui/joy/Typography';
 import Card from '@mui/joy/Card';
-import { Paper } from '@mui/material'
+import { Paper } from '@mui/material';
+import Grid from '@mui/material/Grid';
+import Sidebar from '../Sidebar/Sidebar';
 const data = [
   {
-    src: 'https://images.unsplash.com/photo-1502657877623-f66bf489d236',
-    title: 'Night view',
-    description: '4.21M views',
+    title: 'Italian',
   },
   {
-    src: 'https://images.unsplash.com/photo-1527549993586-dff825b37782',
-    title: 'Lake view',
-    description: '4.74M views',
+    title: 'Mexican ',
   },
   {
-    src: 'https://images.unsplash.com/photo-1532614338840-ab30cf10ed36',
-    title: 'Mountaivn view',
-    description: '3.98M views',
+    title: 'Chinese',
   },
   {
-    src: 'https://images.unsplash.com/photo-1532614338840-ab30cf10ed36',
-    title: 'vMountain vievw',
-    description: '3.98M views',
+    title: 'French  ',
   },
   {
-    src: 'https://images.unsplash.com/photo-1532614338840-ab30cf10ed36',
-    title: 'Mountavin vievw',
-    description: '3.98M views',
+    title: 'Japanese',
   },
   {
-    src: 'https://images.unsplash.com/photo-1532614338840-ab30cf10ed36',
-    title: 'Mouvntain vievw',
-    description: '3.98M views',
+    title: 'Greek ',
   },
   {
-    src: 'https://images.unsplash.com/photo-1532614338840-ab30cf10ed36',
-    title: 'Movuntain view',
-    description: '3.98M views',
+    title: 'Thai',
   },
   {
-    src: 'https://images.unsplash.com/photo-1532614338840-ab30cf10ed36',
-    title: 'Mountavin view',
-    description: '3.98M views',
+    title: 'Lebanese',
   },
+  {
+    title: 'Brazilian',
+  },
+  {
+    title: 'Korean ',
+  },
+  {
+    title: 'Moroccan ',
+  },
+  {
+    title: 'Turkish ',
+  },
+  {
+    title: 'Vietnamese  ',
+  },
+  {
+    title: 'Russian ',
+  },
+  {
+    title: 'Russian ',
+  },
+
 ];
 
 var items = [
@@ -66,20 +74,20 @@ function Item(props)
          <a href="/" className="group relative block">
   <div className="relative h-[350px] sm:h-[450px]">
     <img
-      src="https://images.unsplash.com/photo-1593795899768-947c4929449d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80"
+      src="https://images.unsplash.com/photo-1528712306091-ed0763094c98?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
       alt=""
       className="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0"
     />
 
     <img
-      src="https://images.unsplash.com/photo-1593795899630-b6033c0fa58d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+      src="https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80"
       alt=""
       className="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100"
     />
   </div>
 
   <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
-    <h3 className="text-xl font-medium text-white">Skinny Jeans Blue</h3>
+    <h3 className="text-xl font-medium text-white">SIMPLE RECIPES MADE FOR YOU</h3>
 
     <p className="mt-1.5 max-w-[40ch] text-xs text-white">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi
@@ -87,9 +95,9 @@ function Item(props)
     </p>
 
     <span
-      className="mt-3 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
+      className="mt-3 inline-block bg-red-500 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
     >
-      Shop Now
+      WATCH NOW
     </span>
   </div>
 </a>
@@ -99,13 +107,15 @@ function Item(props)
 
 export default function CarouselRatio() {
   return (
-    <div
-    className='container '>
+    <>
+  
+    
 
     <Box
       sx={{
         display: 'flex',
         gap: 1,
+        mt:1,
         py: 1,
         overflow: 'auto',
         width: "full",
@@ -120,9 +130,9 @@ export default function CarouselRatio() {
 
      
       {data.map((item) => (
-        <Card orientation="horizontal" size="sm" key={item.title} variant="outlined">
+        <Card orientation="horizontal" size="sm" key={item.title} variant="outlined" sx={{borderColor:"red"}}>
       
-          <Box sx={{ whiteSpace: 'nowrap', mx: 1 }}>
+          <Box sx={{ whiteSpace: 'nowrap', mx: 1}}>
             <Typography level="title-md">{item.title}</Typography>
             {/* <Typography level="body-sm">{item.description}</Typography> */}
           </Box>
@@ -133,16 +143,28 @@ export default function CarouselRatio() {
       
     </Box>
     <Box>
-      <Carousel
+    <Grid container spacing={2}>
+  <Grid item xs={6} md={8}>
+       <Carousel className='mt-6'
      
      >
             {
                 items.map( (item, i) => <Item key={i} item={item} /> )
             }
         </Carousel>
+  </Grid>
+  <Grid item xs={6} md={4}>
+  
+      <Sidebar/>
+    
+  </Grid>
+
+</Grid>
+
 
     </Box>
-    </div>
+    </>
+
 
   );
 }

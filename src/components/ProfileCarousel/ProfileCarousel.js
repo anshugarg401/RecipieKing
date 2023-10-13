@@ -12,7 +12,7 @@ const ProfileCarousel = () => {
     <section className="">
 
         <YouTube/>
-        <YouTube1/>
+        {/* <YouTube1/> */}
 
     </section>
   );

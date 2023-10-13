@@ -15,6 +15,9 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
+import CarouselRatio from '../Breadcrums/Breadcrum';
+import logo from "../../images/Restaurant_Menu_Logo_Logo___DesignEvo_Logo_Maker-removebg-preview.png"
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -83,6 +86,7 @@ export default function NavBar() {
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
     <Menu
+
       anchorEl={anchorEl}
       anchorOrigin={{
         vertical: 'top',
@@ -105,7 +109,8 @@ export default function NavBar() {
   const mobileMenuId = 'primary-search-account-menu-mobile';
   const renderMobileMenu = (
     <Menu
-      anchorEl={mobileMoreAnchorEl}
+
+          anchorEl={mobileMoreAnchorEl}
       anchorOrigin={{
         vertical: 'top',
         horizontal: 'right',
@@ -155,8 +160,10 @@ export default function NavBar() {
   );
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+    <Box sx={{ flexGrow: 1 }} >
+      <AppBar position="static" sx={{
+        backgroundColor: "#ef5350"
+      }}>
         <Toolbar>
           <IconButton
             size="large"
@@ -165,16 +172,22 @@ export default function NavBar() {
             aria-label="open drawer"
             sx={{ mr: 2 }}
           >
-            <MenuIcon />
+            {/* <MenuIcon /> */}
           </IconButton>
           <Typography
             variant="h6"
-            noWrap
+            // noWrap
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+            <div className='flex flex-row'>
+            <img height={80} width={80} src={logo} alt="" />
+           <h1 className='italic font-serif text-black opacity-80'>RecipieKings</h1>
+            </div>
+           
           </Typography>
+       
+          <Box sx={{ flexGrow: 1 }} />
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
@@ -184,7 +197,6 @@ export default function NavBar() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>
-          <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
               <Badge badgeContent={4} color="error">
@@ -228,6 +240,8 @@ export default function NavBar() {
       </AppBar>
       {renderMobileMenu}
       {renderMenu}
+      <CarouselRatio />
     </Box>
+    
   );
 }

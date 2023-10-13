@@ -9,7 +9,7 @@ import './css/tailwind.css';
 // import './index.css'
 // import Navbar from './components/Navbar/Navbar.jsx'
 import Home from './pages/Home/Home';
-import RootLayout from './pages/Home/RootLayout/RootLayout';
+import RootLayout from './pages/RootLayout/RootLayout';
 // import ErrorPage from './Pages/ErrorPage/ErrorPage';
 // import Nested from './Nested';
 // import ComingSoon from './Pages/ComingSoon/ComingSoon';

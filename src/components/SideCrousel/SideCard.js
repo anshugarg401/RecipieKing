@@ -3,39 +3,30 @@ import Card from '@mui/joy/Card';
 import CardCover from '@mui/joy/CardCover';
 import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/joy/Typography';
-import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded';
+import LocalDiningIcon from '@mui/icons-material/LocalDining';
+
 
 export default function GradientCover() {
   return (
     <Card sx={{ minHeight: '200px', width: 330 }}>
       <CardCover>
-      <video
-            autoPlay
-            loop
-            muted
-            poster="https://assets.codepen.io/6093409/river.jpg"
-          >
-            <source
-              src="https://assets.codepen.io/6093409/river.mp4"
-              type="video/mp4"
-            />
-          </video>
+<img src="https://images.pexels.com/photos/8969237/pexels-photo-8969237.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
       </CardCover>
       <CardCover
         sx={{
           background:
-            'linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0) 200px), linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 300px)',
+            'linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0) 50px), linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 300px)',
         }}
       />
       <CardContent sx={{ justifyContent: 'flex-end' }}>
         <Typography level="title-lg" textColor="#fff">
-          Yosemite National Park
+        Chimichurri Shrimp with Tomatoes
         </Typography>
         <Typography
-          startDecorator={<LocationOnRoundedIcon />}
+          startDecorator={<LocalDiningIcon />}
           textColor="neutral.300"
         >
-          California, USA
+         Vietnamese
         </Typography>
       </CardContent>
     </Card>

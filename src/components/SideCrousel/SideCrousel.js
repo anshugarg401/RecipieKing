@@ -29,8 +29,7 @@ const SideCrousel = () => {
   return (
     <div>
       <section>
-        
-      <h1 className="ml-10 mb-2">Recipe Videos</h1>
+      <h1 className='italic font-serif text-black opacity-80 font-bold'>RecipieKings</h1>
       
         <div className=" flex flex-col content-center items-center justify-center gap-2">
           

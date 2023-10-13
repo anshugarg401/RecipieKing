@@ -6,7 +6,7 @@ const Sidebar = () => {
     return <>
     
  
-        <div className="group  block h-60 my-5 mt-0 sticky">
+        <div className="group  block h-60 my-5 mt-6 sticky">
   <span className="absolute inset-0 border-2 border-dashed border-black"></span>
 
   <div
@@ -56,9 +56,9 @@ const Sidebar = () => {
   </div>
 </div>
         
-            
-<SideCrousel/>
-    <ProfileCarousel/>
+<ProfileCarousel/>     
+
+  
 
   
 

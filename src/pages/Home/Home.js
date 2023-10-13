@@ -5,11 +5,12 @@ import React from 'react'
 // import How from './How/How'
 // import Download from './Download/Download'
 import App from '../../App'
-
+import Faq from "./Faq"
 function Home() {
   return (
 <div>
     <App/>
+    <Faq/>
 </div>
  
   )
