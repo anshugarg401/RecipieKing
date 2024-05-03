@@ -8,13 +8,13 @@ const useBookhook = (query,pageNumber,url) => {
     const [hasMore,sethasMore] = useState(false);
     useEffect(()=>{
         setRecipies([ ]);
-
+//    "proxy": "https://recipes.eerieemu.com"
     },[query])
     useEffect(()=>{
         let cancel;
         axios({
             method: "GET",
-            url: "https://cors-anywhere.herokuapp.com/https://recipes.eerieemu.com/api/recipe/",
+            url: "/api/recipe/",
             params:{ q:query ,page: pageNumber},
             cancelToken: new axios.CancelToken(c => cancel = c)
         }).then(res => {

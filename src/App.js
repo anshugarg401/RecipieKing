@@ -6,6 +6,8 @@ import Postsection from "./util/Postsection"
 import SideCrousel from './components/SideCrousel/SideCrousel';
 import Infinitescroll from './components/infinitescroll/infinitescroll';
 import Box from '@mui/material/Box';
+
+
 function App() {
   return (
 <>
