@@ -43,7 +43,8 @@ export default function Infinitescroll(){
         <Stack spacing={2} sx={{  pt: 2, minHeight: 0  ,p : "2px"}}>
 
 <Stack spacing={2} >
-  hi
+  THE CONTENT API IS CLOSED
+  INFINITESCROLL
        
         <Box
           component="main"
