@@ -14,7 +14,7 @@ const useBookhook = (query,pageNumber,url) => {
         let cancel;
         axios({
             method: "GET",
-            url: "/api/recipe/",
+            url: "https://cors-anywhere.herokuapp.com/https://recipes.eerieemu.com/api/recipe/",
             params:{ q:query ,page: pageNumber},
             cancelToken: new axios.CancelToken(c => cancel = c)
         }).then(res => {
